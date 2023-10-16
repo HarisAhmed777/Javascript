@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label for="">Enter an Integer</label>
+    <input type ='number' id="inputbox">
+    <label for="">Select a value</label>
+    <select name="" id="dropdown"></select>
+    <label for="">Selected Values Dropdown</label>
+    <select id="seconddropdown"></select>
+    <script>
+        const input = document.getElementById('inputbox');
+        const select1 =document.getElementById('dropdown');
+        input.addEventListener('keyup',haris1);
+        function haris1(){
+            const inputvalue= input.value;
+            let output1= "";
+            for(let i=1;i<=inputvalue;i++){
+                output1+=`<option> ${i} </option>`;
+
+            }
+            
+            select1.innerHTML=output1;
+        }
+        select1.addEventListener('change',haris2);
+
+        function haris2(){
+        let input2=parseInt(select1.value);
+        let select2=document.getElementById('seconddropdown');
+        select2value=parseInt(select1.value)
+
+        let output2="";
+        
+            for(let i=1;i<=input2;i++){
+                output2+=`<option>${i}</option>`
+            }
+           
+            // seconddropdown.innerHTML=output2;
+            select2.innerHTML=output2;
+        }
+         </script>
+</body>
+</html>
+

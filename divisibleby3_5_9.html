@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var a= 1;
+        var b=1;
+        var c=1;
+        while(a<=200){
+            if(a%3==0 && a%5==0 && a%9==0){
+                console.log(a);
+                
+            }
+            a++;
+        }
+        while(b<=200){
+            if(b%45==0){
+                console.log(b);
+            }
+            b++;
+        }
+        do{
+            if(c%45==0){
+                console.log(c);
+                a++;
+            }
+            c++;
+        }
+        while(c<=200);
+    </script>
+</body>
+</html>

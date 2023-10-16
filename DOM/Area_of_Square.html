@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Area Of Square</h3>
+    <label for="">Enter the Side Value :</label>
+    <input type="number" id = "inp">
+    <button type = "button" onclick="AreaOfSquare()">Find Area</button>
+    <h3 id = "answer"></h3>
+    <script>
+        function AreaOfSquare(){
+            var area = document.getElementById("inp");
+            var ans = area.value;
+            square=ans*ans;
+            document.createElement("p");
+            var para = document.createTextNode("The Area of the Guven Value is : ");
+            p.document.appendChild(para)
+            document.getElementById("answer").innerHTML=square;
+        }
+        AreaOfSquare();
+    </script>
+</body>
+</html>

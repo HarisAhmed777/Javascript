@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Event task 1</h3>
+    <button type = 'button'id = 'hello'>Hello</button>
+    <button type = 'button' id = 'alert'>Alert</button>
+    
+    <script>
+        disHello = document.getElementById("hello");
+disAlert = document.getElementById('alert');
+
+disHello.addEventListener('click', hello);
+
+
+disAlert.addEventListener('click', function () {
+    userInput = prompt("Enter your name");
+    alert("Hello " + userInput);
+});
+function hello(){
+    alert("Hello");
+}
+
+    </script>
+</body>
+</html>

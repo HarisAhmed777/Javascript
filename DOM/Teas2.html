@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login Page</title>
+</head>
+<body>
+  <div>
+    <h1>Login Page</h1>
+    <input type="text" placeholder="Username">
+    <button type="button" onclick="insertElement()">Insert Here</button>
+  </div>
+
+<script>
+    function createDOMObject() {
+     var div = document.createElement('div');
+    var text = document.createTextNode('Login Page');
+    var input = document.createElement('input');
+    input.type = 'text';
+    input.placeholder = 'Username';
+    var button = document.createElement('button');
+    var buttonText = document.createTextNode('Click');
+    button.appendChild(buttonText);
+    div.appendChild(text);
+    div.appendChild(input);
+    div.appendChild(button);
+    document.body.appendChild(div);     
+    }
+    createDOMObject();
+</script>
+</body>
+</html> 

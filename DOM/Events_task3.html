@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  
+    <input type = 'text' id ="ip1">
+    <input type = 'text' id="ip2">
+    <button type = 'button' id = 'haris'>Click me to compare</button>
+    <script>
+        const clickbutton = document.getElementById('haris')
+        clickbutton.addEventListener("click",compare)
+            function compare(){
+                var input1 = document.getElementById("ip1");
+                var input2 = document.getElementById("ip2");
+                var cp1 = input1.value;
+                var cp2 = input2.value;
+                if(cp1==cp2){
+                    alert("Both given inputs are equal")
+                }
+                else{
+                    alert("The given inputs are not equal");
+                }
+                document.getElementById("ip1").value=" ";
+                document.getElementById("ip2").value=" ";
+            }
+
+    </script>
+</body>
+</html>

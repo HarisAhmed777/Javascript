@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="number" id="ip1">
+    <input type="number" id="ip2">
+    <input type="submit" onclick="add()" id="sub">
+    <h2 id="out"></h2>
+    <script>
+        function add(){
+           var a=document.getElementById("ip1").value
+           var b=document.getElementById("ip2").value
+            a=parseInt(a);
+            b=parseInt(b);
+            var c=a+b;
+            document.getElementById("out").innerHTML=c;
+        }
+    </script>
+</body>
+
+</html>

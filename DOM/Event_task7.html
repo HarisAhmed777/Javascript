@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type='number' id='inp'>
+    <select id="slc">
+
+    </select>
+</body>
+
+<script>
+    var inputField = document.getElementById('inp');
+    inputField.addEventListener('keydown', function (event) {
+        if (event.key === 'A') {
+            Dropdown();
+        }
+    });
+
+    function Dropdown() {
+        var input = parseInt(document.getElementById('inp').value);
+        let output = "";
+        for (i = 0; i <= input; i++) {
+            output += `<option>${i}</option>`;
+        }
+        var select = document.getElementById('slc');
+        select.innerHTML = output;
+    }
+</script>
+
+</html>

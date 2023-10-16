@@ -1,0 +1,42 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label for="">Enter an integer</label>
+    <input type="number" id="inputbox">
+    <label for="">Select a valve</label>
+    <select name="" id="selectbox1"></select>
+    <label for="">Select Repeat Count</label>
+    <select name="" id="selectbox2"></select>
+    <button type = 'button'>Generate Forms</button>
+    <script>
+        let inputbox=document.getElementById('inputbox');
+        let select1 = document.getElementById('selectbox1');
+        let select2 = document.getElementById('selectbox2');
+        let output1="";
+        inputbox.addEventListener('keydown',script1);
+        function script1(){
+            inputvalue=inputbox.value;
+            for(i=1;i<=inputvalue;i++){
+                output1+=`<option>${i}</option>`;
+            }
+            select1.innerHTML=output1;
+            script2();
+        }
+        select1.addEventListener('change',script2);
+
+        function script2(){
+            let inputsec=parseInt(select1.value);
+            let output2="";
+            for(i=1;i<=inputsec;i++){
+                output2+=`<option>${i}</option>`;
+            }
+            select2.innerHTML=output2;
+        }
+    </script>
+</body> 
+</html>

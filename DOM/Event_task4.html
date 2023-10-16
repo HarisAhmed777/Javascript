@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label for="">Enter Your Name :</label>
+    <input type="text" id = "ip1"><br><br>
+    <label for="">Phone no&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:</label>
+    <input type="number"id = "ip2"><br><br>
+    <button type = "button" id = "btn">Submit</button>
+
+    <script>
+        var click = document.getElementById("btn");
+        click.addEventListener("click",compare)
+        function compare(){
+
+            var input1=document.getElementById("ip1").value;
+            var input2=document.getElementById("ip2").value;
+            if(input1==="" || input2===""){
+                alert("One of your data is empty ,kindly fill and try again :)");
+            }
+            else{
+                alert("Successfully submitted")
+            }
+            document.getElementById("ip1").value="";
+            document.getElementById("ip2").value="";
+        }
+    </script>
+</body>
+</html>

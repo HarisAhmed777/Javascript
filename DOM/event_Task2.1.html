@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label for="" > Enter ur input</label>
+    <input type = "text"placeholder = "Enter anything" id ="inp">
+    <button type = "button" id = "btn">Display Input</button>
+
+    <script>
+        var click = document.getElementById("btn")
+        click.addEventListener("click",displayOutput)
+        function displayOutput(){
+            var input =  document.getElementById("inp");
+            ans=input.value;
+            alert("The value you have entered is "+ ans);
+        }
+    </script>
+</body>
+</html>

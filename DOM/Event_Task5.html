@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label for="">Enter ur first number :</label>
+    <input type ="number" id="ip1"><br><br>
+    <label for="">Enter ur second number : </label>
+    <input type="number"id="ip2"><br><br>
+    <button type = "button" id="btn">Click for Arithemetic operations</button>
+    <div id="out">
+        <p id="add"></p>
+        <p id="sub"></p>
+        <p id="mul"></p>
+        <p id="div"></p>
+        <p id="power"></p>
+        <p id="mod"></p>
+
+    </div>
+    <script>
+        var click = document.getElementById("btn");
+        click.addEventListener("click",arithmetic)
+        function arithmetic(){
+            var input1=parseFloat(document.getElementById("ip1").value);
+            var input2=parseFloat(document.getElementById("ip2").value);
+            var add = input1+input2;
+            var sub = input1-input2;
+            var mul = input1*input2;
+            var div = input1/input2;
+            var power = input1**input2;
+            var modulo = input1%input2;
+            document.getElementById("add").innerHTML = "The addition value of given numbers :"+ add;
+            document.getElementById("sub").innerHTML = "The subraction value of given numbers :"+ sub;
+            document.getElementById("mul").innerHTML = "The multiplication value of given numbers :"+ mul;
+            document.getElementById("div").innerHTML = "The division value of given numbers :"+ div;
+            document.getElementById("power").innerHTML = "The power value of given numbers :"+ power;
+            document.getElementById("mod").innerHTML = "The modulo value of given numbers :"+ modulo;
+        }
+    </script>
+</body>
+</html>

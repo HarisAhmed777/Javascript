@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Add to cart</h3>
+    <input type = 'text' id = "inp">
+    <button type = 'button' onclick="additems()">Add</button>
+    <ul id = "ull">
+
+    </ul>
+    <script>
+        function additems(){
+            var values = document.getElementById('inp');
+            var ans = values.value;
+            var ul =  document.getElementById('ull');
+            var list = document.createElement('li');
+            list.textContent=ans;
+            ul.appendChild(list);
+            document.getElementById('inp').value="";
+
+
+        }
+        additems()
+    </script>
+</body>
+</html>

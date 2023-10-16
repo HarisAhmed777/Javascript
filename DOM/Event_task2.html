@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button type = 'button' id="task2">DisplayDay</button>
+    <script>
+        display=document.getElementById("task2");
+        display.addEventListener('click',function(){
+        var input= prompt("Enter a number");
+        switch(input){
+            case "1":
+                alert("Monday");
+                break;
+            case "2":
+                alert("Tuesday");
+            case "3":
+                alert("Wednesday");
+            case "4":
+                alert("Thrusday");
+            case "5":
+                alert("Friday");
+            case "6":
+                alert("Saturday");
+            case "7":
+                alert("Sunday");
+            default:
+                alert("Enter a  number btw 1-7")
+
+        }
+    })
+    </script>
+</body>
+</html>
